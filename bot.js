@@ -12,4 +12,10 @@
         }
     }) ;
 
+     client.on('message',msg=>{
+            if(msg.content.startsWith('test')){
+                msg.channel.send('test committed') ;
+            }
+        }) ;
+
     client.login(settings.token) ;

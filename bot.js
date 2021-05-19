@@ -12,4 +12,10 @@
         }
     }) ;
 
+    client.on('message',msg=>{
+        if(msg.content.startsWith('早安')){
+            msg.channel.send('晚安') ;
+        }
+    }) ;
+ 
     client.login(settings.token) ;
